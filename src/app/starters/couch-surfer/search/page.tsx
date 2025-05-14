@@ -4,12 +4,13 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { SearchBar } from "@/components/couch-surfer/search-bar";
 
-interface SearchPageProps {
-  searchParams: { [key: string]: string | string[] | undefined };
+type SearchPageProps = {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-export default function SearchPage({ searchParams }: SearchPageProps) {
-  const query = (searchParams.q as string) || "";
+export default async function SearchPage({ searchParams }: SearchPageProps) {
+  const params = await searchParams;
+  const query = (params.q as string) || "";
 
   return (
     <>
@@ -33,10 +34,12 @@ export default function SearchPage({ searchParams }: SearchPageProps) {
             <ArrowLeft className="w-4 h-4" />
             Back to Home
           </Link>
-          <h1 className="text-3xl font-bold">Search Results for "{query}"</h1>
         </header>
 
         <div className="max-w-6xl mx-auto px-4">
+          <h1 className="text-2xl font-bold mb-6 border-l-4 border-primary pl-4">
+            Search Results {query ? `for "${query}"` : ""}
+          </h1>
           <SearchResults query={query} />
         </div>
       </div>

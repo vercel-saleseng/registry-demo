@@ -1,11 +1,16 @@
 import { Suspense } from "react";
 import { ShowDetails } from "@/components/couch-surfer/show-details";
-import { PopularShows } from "@/components/couch-surfer/popular-shows";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { SearchBar } from "@/components/couch-surfer/search-bar";
+import { PopularShows } from "@/components/couch-surfer/popular-shows";
 
-export default function ShowPage({ params }: { params: { id: string } }) {
+type ShowPageProps = {
+  params: Promise<{ id: string }>;
+}
+
+export default async function ShowPage({ params }: ShowPageProps) {
+  const { id } = await params;
+
   return (
     <>
       <header className="border-b border-border py-4">
@@ -13,9 +18,6 @@ export default function ShowPage({ params }: { params: { id: string } }) {
           <a href="/couch-surfer" className="text-xl font-bold text-primary">
             Couch Surfer
           </a>
-          <Suspense>
-            <SearchBar />
-          </Suspense>
         </div>
       </header>
 
@@ -30,13 +32,16 @@ export default function ShowPage({ params }: { params: { id: string } }) {
           </Link>
         </header>
 
-        <ShowDetails showId={params.id} />
-
-        <div className="mt-16 max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 border-l-4 border-primary pl-4">
-            Popular Shows You Might Like
-          </h2>
-          <PopularShows />
+        <div className="max-w-6xl mx-auto px-4">
+          <ShowDetails showId={id} />
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold mb-6 border-l-4 border-primary pl-4">
+              Popular Shows
+            </h2>
+            <Suspense>
+              <PopularShows />
+            </Suspense>
+          </div>
         </div>
       </div>
     </>

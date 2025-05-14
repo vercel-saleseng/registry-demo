@@ -87,8 +87,7 @@ export function SectionContainer({ id, progress, active }: SectionContainerProps
       </div>
       <Progress
         value={progress}
-        className={`h-2 transition-all duration-700 bg-muted`}
-        indicatorClassName={`bg-[hsl(var(--primary))] ${animationState === "opening" ? "animate-pulse" : ""}`}
+        className={`h-2 transition-all duration-700 bg-muted [&>div]:bg-[hsl(var(--primary))] ${animationState === "opening" ? "[&>div]:animate-pulse" : ""}`}
       />
       <div className="text-center text-xs font-mono text-muted-foreground mt-1">{progress}%</div>
     </div>

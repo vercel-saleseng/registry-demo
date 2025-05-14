@@ -16,7 +16,7 @@ export default function Page() {
     { id: "05", progress: 18, active: false },
   ]);
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  const numberGridRef = useRef<any>(null);
+  const numberGridRef = useRef<HTMLDivElement>(null);
 
   // Find a container with less than 100% progress
   const findAvailableContainer = () => {

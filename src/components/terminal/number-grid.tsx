@@ -1,12 +1,17 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { forwardRef, useEffect, useRef, useState } from "react"
 
 interface NumberGridProps {
   onNumberClick: (rowIndex: number, colIndex: number) => void
 }
 
-export function NumberGrid({ onNumberClick }: NumberGridProps) {
+// Create a type for the NumberGrid component that includes the static method
+type NumberGridComponent = React.ForwardRefExoticComponent<NumberGridProps & React.RefAttributes<HTMLDivElement>> & {
+  regenerateGrid?: () => void;
+}
+
+export const NumberGrid = forwardRef<HTMLDivElement, NumberGridProps>(({ onNumberClick }, ref) => {
   // Grid dimensions
   const ROWS = 10
   const COLS = 15
@@ -131,7 +136,7 @@ export function NumberGrid({ onNumberClick }: NumberGridProps) {
   NumberGrid.regenerateGrid = regenerateGrid
 
   return (
-    <div className="p-6 min-h-[400px] flex flex-col items-center justify-center bg-card">
+    <div ref={ref} className="p-6 min-h-[400px] flex flex-col items-center justify-center bg-card">
       <div className="grid grid-cols-1 gap-y-2 font-mono text-center w-full">
         {numberGrid.map((row, rowIndex) => (
           <div key={rowIndex} className="flex justify-center gap-x-4">
@@ -142,8 +147,7 @@ export function NumberGrid({ onNumberClick }: NumberGridProps) {
                 <div
                   key={`${rowIndex}-${colIndex}`}
                   className={`w-6 h-6 flex items-center justify-center text-xs sm:text-sm transition-all duration-300
-                    ${
-                      highlighted ? "text-[hsl(var(--primary))] scale-150 z-10 cursor-pointer" : "text-muted-foreground"
+                    ${highlighted ? "text-[hsl(var(--primary))] scale-150 z-10 cursor-pointer" : "text-muted-foreground"
                     }`}
                   style={{
                     opacity: highlighted ? highlightOpacity : 1,
@@ -159,4 +163,7 @@ export function NumberGrid({ onNumberClick }: NumberGridProps) {
       </div>
     </div>
   )
-}
+}) as NumberGridComponent
+
+// Add display name for better debugging
+NumberGrid.displayName = "NumberGrid"
