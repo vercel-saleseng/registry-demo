@@ -53,15 +53,35 @@
           "target": "app/page.tsx"
         },
         {
-          "path": "src/components/lumon-header.tsx",
+          "path": "src/components/dashboard/header.tsx",
           "type": "registry:component"
         },
         {
-          "path": "src/components/lumon-logo.tsx",
+          "path": "src/components/dashboard/app-sidebar.tsx",
           "type": "registry:component"
         },
         {
-          "path": "src/components/lumon-sidebar.tsx",
+          "path": "src/components/dashboard/stats-cards.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/dashboard/recent-activity.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/dashboard/search-form.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/dashboard/branch-switcher.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/dashboard/chart-section.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/dashboard/department-table.tsx",
           "type": "registry:component"
         }
       ]
@@ -83,12 +103,12 @@
           "target": "tailwind.config.ts"
         },
         {
-          "path": "src/app/starters/store/root-layout.tsx",
+          "path": "src/app/starters/terminal/root-layout.tsx",
           "type": "registry:file",
           "target": "app/layout.tsx"
         },
         {
-          "path": "src/app/starters/store/page.tsx",
+          "path": "src/app/starters/terminal/page.tsx",
           "type": "registry:page",
           "target": "app/page.tsx"
         },
@@ -173,15 +193,7 @@
           "target": "app/page.tsx"
         },
         {
-          "path": "src/components/brand-header.tsx",
-          "type": "registry:component"
-        },
-        {
           "path": "src/components/logo.tsx",
-          "type": "registry:component"
-        },
-        {
-          "path": "src/components/brand-sidebar.tsx",
           "type": "registry:component"
         },
         {
@@ -218,7 +230,7 @@
         "badge",
         "button",
         "https://registry-starter.vercel.app/r/theme.json",
-        "https://registry-starter.vercel.app/r/lumon-logo.json"
+        "https://registry-starter.vercel.app/r/logo.json"
       ],
       "files": [
         {
