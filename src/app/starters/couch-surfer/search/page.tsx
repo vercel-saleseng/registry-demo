@@ -4,12 +4,12 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { SearchBar } from "@/components/couch-surfer/search-bar";
 
-export default function SearchPage({
-  searchParams,
-}: {
-  searchParams: { q: string };
-}) {
-  const query = searchParams.q || "";
+interface SearchPageProps {
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export default function SearchPage({ searchParams }: SearchPageProps) {
+  const query = (searchParams.q as string) || "";
 
   return (
     <>
