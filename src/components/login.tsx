@@ -88,26 +88,6 @@ function LoginForm() {
         </form>
       </Form>
 
-      <div className="relative">
-        <div className="absolute inset-0 flex items-center">
-          <Separator className="w-full" />
-        </div>
-        <div className="relative flex justify-center text-xs uppercase">
-          <span className="bg-background px-2 text-muted-foreground">
-            Or continue with
-          </span>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-2 gap-4">
-        <Button variant="outline" type="button" disabled={isLoading}>
-          Google
-        </Button>
-        <Button variant="outline" type="button" disabled={isLoading}>
-          Microsoft
-        </Button>
-      </div>
-
       <div className="text-center text-sm">
         Don&apos;t have an account?{" "}
         <Link href="/signup" className="text-primary hover:underline">
@@ -129,10 +109,9 @@ export function Login() {
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              &ldquo;Tbh @shadcn really cooked with @shadcn. Keeps passing the
-              test of time.&rdquo;
+              &ldquo;Tame thy tempers.&rdquo;
             </p>
-            <footer className="text-sm">Guillermo Rauch, CEO of Vercel</footer>
+            <footer className="text-sm">Kier Eagan</footer>
           </blockquote>
         </div>
       </div>
@@ -144,29 +123,11 @@ export function Login() {
               Welcome back
             </h1>
             <p className="text-muted-foreground text-sm">
-              Enter your email to sign in to your account
+              Enter your email to sign in to your Lumon account
             </p>
           </div>
 
           <LoginForm />
-
-          <p className="px-8 text-center text-muted-foreground text-sm">
-            By clicking continue, you agree to our{" "}
-            <Link
-              href="#terms"
-              className="underline underline-offset-4 hover:text-primary"
-            >
-              Terms of Service
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="#privacy"
-              className="underline underline-offset-4 hover:text-primary"
-            >
-              Privacy Policy
-            </Link>
-            .
-          </p>
         </div>
       </div>
     </div>

@@ -12,9 +12,14 @@ const starters = [
     url: "/starters/dashboard",
   },
   {
-    title: "Store",
-    name: "store",
-    url: "/starters/store",
+    title: "Terminal",
+    name: "terminal",
+    url: "/starters/terminal",
+  },
+  {
+    title: "Couch Surfer",
+    name: "couch-surfer",
+    url: "/starters/couch-surfer",
   },
   {
     title: "Blank",

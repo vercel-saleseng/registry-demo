@@ -4,6 +4,7 @@ import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import "@/app/globals.css";
 import { DashboardHeader } from "@/components/dashboard/header";
 import { AppSidebar } from "@/components/dashboard/app-sidebar";
+import { Toaster } from "sonner";
 
 export default function RootLayout({
   children,
@@ -12,11 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <SidebarProvider>
-      <AppSidebar />
-      <SidebarInset>
-        <DashboardHeader />
+      <main className="flex flex-col items-center w-full">
         {children}
-      </SidebarInset>
+      </main>
+      <Toaster />
     </SidebarProvider>
   );
 }
