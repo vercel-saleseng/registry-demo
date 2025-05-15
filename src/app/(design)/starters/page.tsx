@@ -28,7 +28,7 @@ const starters = [
   },
 ];
 
-export default function StartPage() {
+export default function StartsPage() {
   return (
     <div className="container p-5 md:p-10">
       <div className="mb-6 flex items-center justify-between">
