@@ -72,6 +72,7 @@ export const gettingStartedItems = [
   { name: "Home", path: "/" },
   { name: "Design Tokens", path: "/tokens" },
   { name: "Starters", path: "/starters" },
+  { name: "Experiments", path: "/experiments" },
 ];
 
 export function RegistrySidebar() {
