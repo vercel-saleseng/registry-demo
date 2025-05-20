@@ -57,9 +57,18 @@
 main {
   background-color: var(--background);
   color: var(--foreground);
-  border-color: var(--border);
-  border-top-color: var(--border);
-  border-bottom-color: var(--border);
-  border-left-color: var(--border);
-  border-right-color: var(--border);
+
+  /* Add this CSS rule after the main section to ensure border colors are properly applied */
+  .border,
+  .border-t,
+  .border-b,
+  .border-l,
+  .border-r {
+    border-color: var(--border);
+  }
+
+  /* Also ensure that card borders use the correct color */
+  .bg-card {
+    border-color: var(--border);
+  }
 }

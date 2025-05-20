@@ -153,7 +153,7 @@
         {
           "path": "src/app/starters/couch-surfer/root-layout.tsx",
           "type": "registry:file",
-          "target": "app/root-layout.tsx"
+          "target": "app/layout.tsx"
         },
         {
           "path": "src/app/starters/couch-surfer/page.tsx",
