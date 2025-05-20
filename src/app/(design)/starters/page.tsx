@@ -24,7 +24,6 @@ const starters = [
   {
     title: "Blank",
     name: "blank",
-    url: "/starters/blank",
   },
 ];
 
@@ -51,7 +50,7 @@ export default function StartsPage() {
             baseUrl={process.env.VERCEL_PROJECT_PRODUCTION_URL ?? ""}
             title={starter.title}
             promptTitle={`${starter.title} Starter Kit`}
-            previewUrl={starter.url}
+            previewUrl={starter.url ? starter.url : undefined}
           />
         ))}
       </div>
