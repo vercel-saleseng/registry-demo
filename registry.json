@@ -151,9 +151,9 @@
           "target": "tailwind.config.ts"
         },
         {
-          "path": "src/app/starters/couch-surfer/layout.tsx",
+          "path": "src/app/starters/couch-surfer/root-layout.tsx",
           "type": "registry:file",
-          "target": "app/layout.tsx"
+          "target": "app/root-layout.tsx"
         },
         {
           "path": "src/app/starters/couch-surfer/page.tsx",
