@@ -54,7 +54,7 @@
   --shadow-2xl: 1px 1px 2px 0px hsl(180 70% 60% / 0.5);
 }
 
-body {
+* {
   background-color: var(--background);
   color: var(--foreground);
   border-color: var(--border);
