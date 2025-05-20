@@ -165,11 +165,7 @@ export function RegistrySidebar() {
                           asChild
                           isActive={pathname === item.path}
                         >
-                          <Link href={item.path} className="flex items-center">
-                            <span className="ml-2 opacity-100 transition-all duration-200">
-                              {item.name}
-                            </span>
-                          </Link>
+                          <Link href={item.path}>{item.name}</Link>
                         </SidebarMenuButton>
                       </SidebarMenuItem>
                     ))}
