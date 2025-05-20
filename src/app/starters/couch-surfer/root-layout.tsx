@@ -1,21 +1,27 @@
-import type React from "react";
-import { Toaster } from "sonner";
+import { VercelToolbar } from "@vercel/toolbar/next";
+import { Geist } from "next/font/google";
+import React, { type ReactNode } from "react";
 
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { cn } from "@/lib/utils";
 
 import "@/app/globals.css";
 
+const geist = Geist({ subsets: ["latin"] });
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: Readonly<{
+  children: ReactNode;
+}>) {
   return (
-    <SidebarProvider>
-      <main className="flex flex-col items-center w-full">
-        {children}
-      </main>
-      <Toaster />
-    </SidebarProvider>
+    <html lang="en" className={cn(geist.className, "bg-background")}>
+      <body>
+        <main className="flex w-full justify-center">
+          <div className="container">{children}</div>
+        </main>
+
+        {process.env.NODE_ENV === "development" && <VercelToolbar />}
+      </body>
+    </html>
   );
 }

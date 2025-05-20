@@ -18,14 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn(geist.className, "bg-background")}>
       <body>
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarInset>
-            <DashboardHeader />
-            {children}
-          </SidebarInset>
-        </SidebarProvider>
-
+        <main>
+          <SidebarProvider>
+            <AppSidebar />
+            <SidebarInset>
+              <DashboardHeader />
+              {children}
+            </SidebarInset>
+          </SidebarProvider>
+        </main>
         {process.env.NODE_ENV === "development" && <VercelToolbar />}
       </body>
     </html>
