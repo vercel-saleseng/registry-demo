@@ -70,7 +70,6 @@
     "@types/node": "^22.10.4",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@vercel/toolbar": "^0.1.36",
     "@vitejs/plugin-react-swc": "^3.7.2",
     "jsdom": "^25.0.1",
     "postcss": "^8.5.3",

@@ -18,11 +18,9 @@ const componentItems = [
 ];
 
 const blockItems = [
-  { name: "Headers", path: "/blocks/headers" },
-  { name: "Hero Sections", path: "/blocks/hero-sections" },
-  { name: "Feature Sections", path: "/blocks/feature-sections" },
-  { name: "Pricing Tables", path: "/blocks/pricing-tables" },
-  { name: "Contact Forms", path: "/blocks/contact-forms" },
+  { name: "Hero", path: "/blocks/hero" },
+  { name: "Login", path: "/blocks/login" },
+  { name: "Promo", path: "/blocks/promo" },
 ];
 
 export default function Home() {
@@ -117,14 +115,13 @@ export default function Home() {
               <a href="/starters" className="underline">
                 starter
               </a>{" "}
-              and click the{" "}
-              <span className="font-bold">Open in v0</span> button. You can also
-              open individual components or blocks in v0 if you want a smaller
-              or more specific starting point.
+              and click the <span className="font-bold">Open in v0</span>{" "}
+              button. You can also open individual components or blocks in v0 if
+              you want a smaller or more specific starting point.
             </p>
 
             <p className="mt-4 ">
-              <a href="https://github.com/willsather/design-system-starter">
+              <a href="https://github.com/willsather/registry-starter">
                 <svg
                   width="1024"
                   height="1024"

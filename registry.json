@@ -299,7 +299,8 @@
       "registryDependencies": [
         "accordion",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "alert",
@@ -309,7 +310,8 @@
       "registryDependencies": [
         "alert",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "avatar",
@@ -319,7 +321,8 @@
       "registryDependencies": [
         "avatar",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "badge",
@@ -329,7 +332,8 @@
       "registryDependencies": [
         "badge",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "breadcrumb",
@@ -339,7 +343,8 @@
       "registryDependencies": [
         "breadcrumb",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "button",
@@ -349,7 +354,8 @@
       "registryDependencies": [
         "button",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "calendar",
@@ -359,7 +365,8 @@
       "registryDependencies": [
         "calendar",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "card",
@@ -369,7 +376,8 @@
       "registryDependencies": [
         "card",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "chart",
@@ -379,7 +387,8 @@
       "registryDependencies": [
         "chart",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "checkbox",
@@ -389,7 +398,8 @@
       "registryDependencies": [
         "checkbox",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "data-table",
@@ -399,7 +409,8 @@
       "registryDependencies": [
         "data-table",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "date-picker",
@@ -409,7 +420,8 @@
       "registryDependencies": [
         "date-picker",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "dialog",
@@ -419,7 +431,8 @@
       "registryDependencies": [
         "dialog",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "dropdown-menu",
@@ -429,7 +442,8 @@
       "registryDependencies": [
         "dropdown-menu",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "input",
@@ -439,7 +453,8 @@
       "registryDependencies": [
         "input",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "menu-bar",
@@ -449,7 +464,8 @@
       "registryDependencies": [
         "menu-bar",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "select",
@@ -459,7 +475,8 @@
       "registryDependencies": [
         "select",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "separator",
@@ -469,7 +486,8 @@
       "registryDependencies": [
         "separator",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "skeleton",
@@ -479,7 +497,8 @@
       "registryDependencies": [
         "skeleton",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "slider",
@@ -489,7 +508,8 @@
       "registryDependencies": [
         "slider",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "switch",
@@ -499,7 +519,8 @@
       "registryDependencies": [
         "switch",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "table",
@@ -509,7 +530,8 @@
       "registryDependencies": [
         "table",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "tabs",
@@ -519,7 +541,8 @@
       "registryDependencies": [
         "tabs",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "toggle-group",
@@ -529,7 +552,8 @@
       "registryDependencies": [
         "toggle-group",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     },
     {
       "name": "tooltip",
@@ -539,7 +563,8 @@
       "registryDependencies": [
         "tooltip",
         "https://registry-starter.vercel.app/r/theme.json"
-      ]
+      ],
+      "files": []
     }
   ]
 }

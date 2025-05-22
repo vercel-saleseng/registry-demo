@@ -1,4 +1,3 @@
-import { VercelToolbar } from "@vercel/toolbar/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import React, { type ReactNode } from "react";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
@@ -8,7 +7,15 @@ import "@/app/globals.css";
 import { DashboardHeader } from "@/components/dashboard/header";
 import { AppSidebar } from "@/components/dashboard/app-sidebar";
 
-const geist = Geist({ subsets: ["latin"] });
+const GeistSans = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
+
+const GeistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
 
 export default function RootLayout({
   children,
@@ -16,7 +23,14 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn(geist.className, "bg-background")}>
+    <html
+      lang="en"
+      className={cn(
+        GeistSans.variable,
+        GeistMono.variable,
+        "bg-background text-foreground",
+      )}
+    >
       <body>
         <main>
           <SidebarProvider>
@@ -27,7 +41,6 @@ export default function RootLayout({
             </SidebarInset>
           </SidebarProvider>
         </main>
-        {process.env.NODE_ENV === "development" && <VercelToolbar />}
       </body>
     </html>
   );
