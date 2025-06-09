@@ -748,6 +748,18 @@
           "target": "app/layout.tsx"
         }
       ]
+    },
+    {
+      "name": "carbon",
+      "type": "registry:block",
+      "title": "IBM Carbon Design System",
+      "description": "A experimental registry entry for the IBM Carbon Design System"
+    },
+    {
+      "name": "cms",
+      "type": "registry:block",
+      "title": "CMS Design System",
+      "description": "A experimental registry entry for the CMS Design System"
     }
   ]
 }

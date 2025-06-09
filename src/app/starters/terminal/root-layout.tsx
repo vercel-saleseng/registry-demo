@@ -1,4 +1,5 @@
-import { VercelToolbar } from "@vercel/toolbar/next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist } from "next/font/google";
 import React, { type ReactNode } from "react";
 
@@ -20,7 +21,8 @@ export default function RootLayout({
           <div className="container">{children}</div>
         </main>
 
-        {process.env.NODE_ENV === "development" && <VercelToolbar />}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

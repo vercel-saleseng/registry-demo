@@ -2,7 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import type React from "react";
 
-import { ComponentCard } from "@/components/component-card";
+import { ComponentCard } from "@/components/design/component-card";
 import { Button } from "@/components/ui/button";
 
 // name of
